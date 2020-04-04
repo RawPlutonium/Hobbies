@@ -15,7 +15,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button goToHobbies;
+    Button goToHobbies, exitBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         goToHobbies = findViewById(R.id.hobbiesBtn);
+        exitBtn = findViewById(R.id.exitBtn);
         goToHobbies.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -31,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
 
+        );
+        exitBtn.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        System.exit(0);
+                    }
+                }
         );
     }
 }
