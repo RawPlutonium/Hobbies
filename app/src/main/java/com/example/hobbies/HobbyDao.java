@@ -13,4 +13,10 @@ public interface HobbyDao {
 
     @Insert
     void insertAll(Hobby... hobbies);
+
+    @Query("SELECT * FROM hobby WHERE hobby_id=:id")
+    Hobby getHobby(int id);
+
+    @Query("UPDATE Hobby SET name = :name, hours = :hours WHERE hobby_id=:id")
+    void updateHobby(String name, Integer hours, int id);
 }

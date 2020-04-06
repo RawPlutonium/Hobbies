@@ -1,5 +1,6 @@
 package com.example.hobbies;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -17,7 +18,7 @@ import java.util.List;
 
 public class Hobbies extends AppCompatActivity {
     RecyclerView recyclerView;
-    RecyclerView.Adapter adapter;
+    HobbyAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +36,15 @@ public class Hobbies extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new HobbyAdapter(hobbies);
         recyclerView.setAdapter(adapter);
+        adapter.setOnItemClickListener(
+                new HobbyAdapter.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(Hobby hobby) {
+                        Intent intent = new Intent(Hobbies.this, ViewHobby.class);
+                        intent.putExtra("HOBBY_ID", hobby.getHobby_id());
+                        startActivity(intent);
+                    }
+                }
+        );
     }
 }

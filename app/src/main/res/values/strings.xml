@@ -16,7 +16,17 @@
     <string name="new_hobby">New Hobby</string>
     <string name="title_activity_add_hobby">AddHobby</string>
     <string name="add_hobby">Add Hobby</string>
+
+    <string name="title_activity_hobbies">Hobbies</string>
+    <string name="title_activity_edit_hobby">EditHobby</string>
+    <string name="update">Update</string>
+    <string name="title_activity_view_hobby">ViewHobby</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="chart">Chart</string>
+    <string name="edit_hobby">Edit Hobby</string>
+    <string name="title_activity_chart">Chart</string>
+    <string name="chart_desc">My Chart</string>
     <string name="hobby_name">Hobby Name</string>
     <string name="hours">Hours</string>
-    <string name="title_activity_hobbies">Hobbies</string>
+    <string name="delete_hobby">Delete Hobby</string>
 </resources>

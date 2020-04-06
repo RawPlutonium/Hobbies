@@ -1,0 +1,50 @@
+<androidx.cardview.widget.CardView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/layoutEditHobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.9"
+        android:layout_marginStart="10dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/hobbyName"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:textSize="18sp" />
+
+        <TextView android:layout_width="wrap_content"
+            android:id="@+id/hobbyHours"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_below="@+id/layoutEditHobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/editHobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_hobby"/>
+        <Button
+            android:layout_toRightOf="@+id/editHobby"
+            android:id="@+id/chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chart"
+            android:layout_toEndOf="@+id/editHobby" />
+
+    </RelativeLayout>
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

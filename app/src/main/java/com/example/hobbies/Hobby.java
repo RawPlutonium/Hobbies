@@ -14,11 +14,11 @@ public class Hobby {
     @PrimaryKey(autoGenerate = true)
     private int hobby_id;
 
-    public int getHobby_id() {
+    int getHobby_id() {
         return hobby_id;
     }
 
-    public void setHobby_id(int hobby_id) {
+    void setHobby_id(int hobby_id) {
         this.hobby_id = hobby_id;
     }
 
